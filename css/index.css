@@ -1,0 +1,118 @@
+/* body {background-color:darkcyan;} */
+
+body {
+    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVRev2oZxWgbl9P20pIAkvU0p61-j4HRYrbQ&usqp=CAU); */
+    background-color: rgb(65, 102, 224);
+    margin: 0;
+    font-family: monospace;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  #hero-header {
+    background-image: url(https://www.delmanor.com/wp-content/uploads/2020/05/superhero.jpg);
+    display: flex;
+    justify-content: center;
+    /* background: rgb(1, 0, 5); */
+    opacity: .8;
+    height: 8rem;
+    /* width: 80rem; */
+    padding: 5rem;
+    background-repeat: no-repeat;
+    /* background-size: 100% 100%; */
+    background-position: center;
+  }
+  
+  #hero-header img {
+    height: 6rem;
+    width: auto;
+  }
+  
+  #hero-collection {
+    margin: 2rem;
+  }
+  
+  .card {
+    background-image: url(https://i.pinimg.com/originals/41/f7/8a/41f78a7463b4c437b188182b64b351ca.png);
+    /* background-image: url(https://previews.123rf.com/images/ichbinsam/ichbinsam1707/ichbinsam170700137/82742532-superhero-logo-pop-art-background-design-vector.jpg); */
+    text-align: center;
+    border: grey solid 1px;
+    padding: 1rem;
+    width: 15rem;
+    height: 25rem;
+    display: inline-grid;
+    margin: 1rem 2rem;
+    box-shadow: 3px 4px rgb(252, 252, 76);
+    background-size: 100% 100%;
+  }
+  
+  .hero-images {
+    justify-self: center;
+    height: 12rem;
+    width: auto;
+  }
+  
+  button {
+    position: relative;
+    background-color: #fab30c;
+    border: none;
+    border-radius: 5px;
+    height: 3rem;
+    width: max-content;
+    color: black;
+    font-size: 18px;
+    justify-self: center;
+  }
+  
+  button:hover {
+    background-color: whitesmoke;
+    border: #fab30c solid 1px;
+    color: #fab30c;
+  }
+  
+  .container {
+    padding: 1rem;
+    width: stretch;
+    height: auto;
+    display: none;
+    background: rgb(65, 102, 224);
+    opacity: .8;
+  }
+  
+  .add--form {
+    width: 80%
+  }
+  
+  .submit {
+    position: relative;
+    background-color: #fab30c;
+    border-radius: 5px;
+    height: 2rem;
+    width: max-content;
+    color: whitesmoke;
+    font-size: 18px;
+    justify-self: center;
+    font-family: monospace;
+    margin: 3px;
+  }
+  
+  .submit:hover {
+    background-color: whitesmoke;
+    border: #fab30c solid 1px;
+    color: #fab30c;
+  }
+  
+  
+  .input-text {
+    border-radius: 5px;
+    height: 2rem;
+    width: 60%;
+    font-size: 18px;
+    font-family: monospace;
+    margin: 3px;
+  }
+  
+  h2 {
+    text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
+  }
+  
