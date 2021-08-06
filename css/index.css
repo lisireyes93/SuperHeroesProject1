@@ -1,49 +1,49 @@
-/* body {background-color:darkcyan;} */
-
 body {
-    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVRev2oZxWgbl9P20pIAkvU0p61-j4HRYrbQ&usqp=CAU); */
-    background-color: rgb(65, 102, 224);
+    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb69U2KJjzFPy3mfCuHgnGcYTOVHpcyBqd0w&usqp=CAU); */
     margin: 0;
-    font-family: monospace;
+    font-family: "Comic Sans MS";
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    height: 4000px;
+    background: linear-gradient(100deg, #b80f0f 0%, #e7c860 51%, #307acf 85%);
   }
   
   #hero-header {
     background-image: url(https://www.delmanor.com/wp-content/uploads/2020/05/superhero.jpg);
     display: flex;
     justify-content: center;
-    /* background: rgb(1, 0, 5); */
-    opacity: .8;
     height: 8rem;
-    /* width: 80rem; */
     padding: 5rem;
     background-repeat: no-repeat;
-    /* background-size: 100% 100%; */
     background-position: center;
   }
   
-  #hero-header img {
+  #hero-header:hover{
+     animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  
+  #hero-header img{
     height: 6rem;
     width: auto;
   }
+
+   @keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
   
   #hero-collection {
     margin: 2rem;
-  }
-  
-  .card {
-    background-image: url(https://i.pinimg.com/originals/41/f7/8a/41f78a7463b4c437b188182b64b351ca.png);
-    /* background-image: url(https://previews.123rf.com/images/ichbinsam/ichbinsam1707/ichbinsam170700137/82742532-superhero-logo-pop-art-background-design-vector.jpg); */
-    text-align: center;
-    border: grey solid 1px;
-    padding: 1rem;
-    width: 15rem;
-    height: 25rem;
-    display: inline-grid;
-    margin: 1rem 2rem;
-    box-shadow: 3px 4px rgb(252, 252, 76);
-    background-size: 100% 100%;
   }
   
   .hero-images {
@@ -62,6 +62,18 @@ body {
     color: black;
     font-size: 18px;
     justify-self: center;
+    font-family: "Comic Sans MS"
+  }
+
+  .like-amount {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: "Comic Sans MS";
   }
   
   button:hover {
@@ -75,8 +87,7 @@ body {
     width: stretch;
     height: auto;
     display: none;
-    background: rgb(65, 102, 224);
-    opacity: .8;
+    color: white;
   }
   
   .add--form {
@@ -92,7 +103,7 @@ body {
     color: whitesmoke;
     font-size: 18px;
     justify-self: center;
-    font-family: monospace;
+    font-family: "Comic Sans MS";
     margin: 3px;
   }
   
@@ -102,17 +113,74 @@ body {
     color: #fab30c;
   }
   
-  
   .input-text {
     border-radius: 5px;
     height: 2rem;
     width: 60%;
     font-size: 18px;
-    font-family: monospace;
+    font-family: "Comic Sans MS";
     margin: 3px;
   }
-  
+
+.input-text-2 {
+    border-radius: 5px;
+    height: 2rem;
+    width: 60%;
+    font-size: 18px;
+    font-family: "Comic Sans MS";
+    margin: 3px;
+  }
+
   h2 {
     text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
+    padding: 1rem;
   }
   
+.flip-card {
+  background-color: transparent;
+  width: 15rem;
+  height: 25rem;
+  padding: 3rem;
+  display: inline-grid;
+  margin: 1rem 2rem;
+  box-shadow: 3px 4px rgb(252, 252, 76);
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; 
+  background-image: url(https://i.pinimg.com/originals/41/f7/8a/41f78a7463b4c437b188182b64b351ca.png);
+  background-size: 100% 100%;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: rgba(187, 187, 187, 0);
+  color: black;
+}
+
+.flip-card-back {
+  background-color: rgba(231, 223, 117, 0);
+  color: black;
+  transform: rotateY(180deg);
+  font-size: 18px;
+  font-family: "Comic Sans MS";
+}
+

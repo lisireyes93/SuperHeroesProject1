@@ -1,1 +1,1 @@
-how to use tings things
+how to use things things
