@@ -20,6 +20,7 @@ heros.forEach(heros => {
     .then(resp => resp.json())
     .then(heros => {
       superHeros(heros)
+      console.log(heros)
     })
 })
 
@@ -49,7 +50,7 @@ function superHeros(e) {
     h2Hero.textContent = inputHeroName.value;
     imgHero.src = inputHeroUrl.value;
 
-    let power = { intelligence: Math.floor((Math.random() * 100) + 1), strength: Math.floor((Math.random() * 100) + 1), Speed: Math.floor((Math.random() * 100) + 1), Durability: Math.floor((Math.random() * 100) + 1), Power: Math.floor((Math.random() * 100) + 1), Combat: Math.floor((Math.random() * 100) + 1) }
+    let power = { intelligence: Math.floor((Math.random() * 100) + 30), strength: Math.floor((Math.random() * 100) + 30), Speed: Math.floor((Math.random() * 100) + 30), Durability: Math.floor((Math.random() * 100) + 30), Power: Math.floor((Math.random() * 100) + 30), Combat: Math.floor((Math.random() * 100) + 30) }
     for (const x in power) {
       const pStats = document.createElement('p')
       pStats.textContent = `${x}:${power[x]}`

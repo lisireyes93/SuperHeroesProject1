@@ -1,5 +1,4 @@
 body {
-    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb69U2KJjzFPy3mfCuHgnGcYTOVHpcyBqd0w&usqp=CAU); */
     margin: 0;
     font-family: "Comic Sans MS";
     background-repeat: no-repeat;
@@ -9,7 +8,7 @@ body {
   }
   
   #hero-header {
-    background-image: url(https://www.delmanor.com/wp-content/uploads/2020/05/superhero.jpg);
+    background-image: url(https://media.istockphoto.com/vectors/superheroes-vector-id1003207292?k=20&m=1003207292&s=170667a&w=0&h=x0HBRoIUwAsDBaXH_711EYcdDIoQ9hrxMpHyeEPlwnY=);
     display: flex;
     justify-content: center;
     height: 8rem;
